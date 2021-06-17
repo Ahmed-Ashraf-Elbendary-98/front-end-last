@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!--?-------------- JavaScript------------------ -->
+    <script src="/action.js" type="text/javascript"></script>
+
+    <!-- ? -------------- CSS ---------------------- -->
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+
+    <!--?---------------------- Font-awesome ------------------------->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!--?------------------------ Google Fonts ------------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="loader"></div>
+
+    <div class="scaleable-div" id="scaleable-div">
+      <div class="collector" id="collector">
+        <div class="header" >
+          <!-- style="background-color: rgb(187, 108, 108)" -->
+          <a href="#" onclick="play()">
+            <div class="title-audio">
+              <span style="font-size: 2em; color: orange; font-weight: bold">
+                <i class="fas fa-volume-up"></i>
+              </span>
+            </div>
+          </a>
+          <div class="headingTitle">
+            <h1>Listen and number. Then ask and answer.</h1>
+          </div>
+        </div>
+
+        <div class="container-div" id="container-div">
+          <!-- <img src="/images/pexels-photo-733853.jpeg" /> -->
+          <div class="question-1">
+            <a href="#" onclick="playCat()"
+              ><img class="queImage" src="/images/cute-cat.png"
+            /></a>
+            <div class="queDropdown">
+              <div class="select selected"></div>
+              <!-- to display the answers -->
+              <select name="animal-1" id="animal-1">
+                <option value="" disabled selected></option>
+                <option value="cat">cat</option>
+                <option value="lion">lion</option>
+              </select>
+              <!-- end of the selection -->
+              <!-- end of the selection -->
+            </div>
+            <!-- end of the dropdown div -->
+          </div>
+          <!-- end of the question-1 div -->
+
+          <div class="question-2">
+            <a href="#" onclick="playLion()"
+              ><img class="queImage" src="/images/lion.jpg"
+            /></a>
+            <div class="queDropdown">
+              <div class="select selected"></div>
+              <!-- to display the answers -->
+              <select name="animal-2" id="animal-2">
+                <option value="" disabled selected></option>
+                <option value="cat">cat</option>
+                <option value="lion">lion</option>
+              </select>
+              <!-- end of the selection -->
+              <!-- end of the selection -->
+            </div>
+            <!-- end of the dropdown div -->
+          </div>
+          <!-- end of the question-1 div -->
+        </div>
+        <!--! end of container-div -->
+        <!--?------------- end of the container-div -------------->
+
+        <div class="footer">
+          <a href="#" id="repeat-btn">
+            <div class="box1">
+              <span style="font-size: 3em; color: white">
+                <i class="fas fa-redo-alt"></i>
+              </span>
+              <!-- <i class="fas fa-redo-alt"></i> -->
+            </div>
+          </a>
+          <div class="box2">
+            <audio controls>
+              <source
+                src="https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav"
+                type="audio/mp3"
+              />
+
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+
+          <a href="#" id="see-btn">
+            <div class="box3">
+              <span style="font-size: 3em; color: white">
+                <i class="far fa-eye"></i>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- https://audio-previews.elements.envatousercontent.com/files/271994176/preview.mp3 -->
